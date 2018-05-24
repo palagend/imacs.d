@@ -28,3 +28,4 @@ network-security.data
 *.dat
 *.swp
 /.cache/
+/projectile-bookmarks.eld

@@ -1,31 +1,23 @@
 ;; Install extensions if they're missing
 (defun init--install-packages ()
   (packages-install
-   '(magit
-     wgrep
-     edn
-     inflections
-     hydra
-     paredit
-     move-text
-     gist
-     htmlize
+   '(
+     treemacs
+     treemacs-projectile
+     guide-key
      visual-regexp
-     markdown-mode
      fill-column-indicator
      flycheck
      flycheck-pos-tip
      flycheck-clojure
-     flx
-     f
-     flx-ido
-     css-eldoc
      yasnippet
      smartparens
-     ido-vertical-mode
-     ido-at-point
-     simple-httpd
-     guide-key
+     magit
+     paredit
+     move-text
+     prodigy
+     htmlize
+     markdown-mode
      nodejs-repl
      restclient
      highlight-escape-sequences
@@ -40,6 +32,12 @@
      yesql-ghosts
      string-edit
      beginend
+     expand-region
+     multiple-cursors
+     jump-char
+     multifiles
+     change-inner
+     browse-kill-ring
      )))
 
 (condition-case nil
@@ -47,9 +45,6 @@
   (error
    (package-refresh-contents)
    (init--install-packages)))
-
-;; Lets start with a smattering of sanity
-(require 'sane-defaults)
 
 ;; Setup environment variables from the user's shell.
 (when is-mac
@@ -64,25 +59,16 @@
 (setq guide-key/popup-window-position 'bottom)
 
 ;; Setup extensions
-(eval-after-load 'ido '(require 'setup-ido))
 (eval-after-load 'org '(require 'setup-org))
-;(eval-after-load 'dired '(require 'setup-dired))
 (eval-after-load 'magit '(require 'setup-magit))
-(eval-after-load 'shell '(require 'setup-shell))
-(require 'setup-rgrep)
 (require 'setup-hippie)
 (require 'setup-yasnippet)
-(require 'setup-perspective)
-(require 'setup-ffip)
 (require 'setup-html-mode)
 (require 'setup-paredit)
 (beginend-global-mode)
 
 (require 'prodigy)
 (global-set-key (kbd "C-x M-m") 'prodigy)
-
-;; Font lock dash.el
-(eval-after-load "dash" '(dash-enable-font-lock))
 
 ;; Default setup of smartparens
 (require 'smartparens-config)
@@ -132,8 +118,6 @@
 (require 'multiple-cursors)
 (require 'delsel)
 (require 'jump-char)
-(require 'eproject)
-(require 'smart-forward)
 (require 'change-inner)
 (require 'multifiles)
 
@@ -151,15 +135,10 @@
 (require 'browse-kill-ring)
 (setq browse-kill-ring-quit-action 'save-and-restore)
 
-;; Smart M-x is smart
-(require 'smex)
-(smex-initialize)
-
 ;; Setup key bindings
 (require 'key-bindings)
 
 ;; Misc
-(require 'project-archetypes)
 (require 'my-misc)
 (when is-mac (require 'mac))
 
