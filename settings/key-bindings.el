@@ -261,8 +261,11 @@
 (global-set-key (kbd "M-s f") 'find-name-dired)
 
 ;; Project-related keybindings
-(global-set-key (kbd "C-c pf") 'projectile-find-file)
-(global-set-key (kbd "C-c pp") 'treemacs)
+(global-set-key (kbd "C-c p f") 'helm-projectile-find-file-dwim)
+(global-set-key (kbd "C-c p s") 'helm-projectile-switch-project)
+(global-set-key (kbd "C-c p h") 'helm-projectile-find-file-in-known-projects)
+(global-set-key (kbd "C-c p a") 'projectile-add-known-project)
+(global-set-key (kbd "C-c p p") 'treemacs)
 
 ;; View occurrence in occur mode
 (define-key occur-mode-map (kbd "v") 'occur-mode-display-occurrence)

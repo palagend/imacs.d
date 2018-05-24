@@ -2,8 +2,8 @@
 (defun init--install-packages ()
   (packages-install
    '(
-     treemacs
      treemacs-projectile
+     helm-projectile
      guide-key
      visual-regexp
      fill-column-indicator
