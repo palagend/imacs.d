@@ -2,11 +2,11 @@
 (require 'dash)
 
 ;; Add melpa and melpa-china to package repos
-(add-to-list 'package-archives '("melpa-stable" . "http://stable.melpa.org/packages/") t)
 (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
-(add-to-list 'package-archives '("melpa-china" . "http://elpa.emacs-china.org/melpa/"))
-(add-to-list 'package-archives '("melpa-stable-china" . "http://elpa.emacs-china.org/melpa-stable/"))
-(add-to-list 'package-archives '("gnu-china" ."http://elpa.emacs-china.org/gnu/"))
+(add-to-list 'package-archives '("melpa-stable" . "http://stable.melpa.org/packages/") t)
+(add-to-list 'package-archives '("melpa-china" . "http://elpa.emacs-china.org/melpa/") t)
+(add-to-list 'package-archives '("melpa-stable-china" . "http://elpa.emacs-china.org/melpa-stable/") t)
+(add-to-list 'package-archives '("gnu-china" ."http://elpa.emacs-china.org/gnu/") t)
 
 
 (setq package-pinned-packages '())

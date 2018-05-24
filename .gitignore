@@ -27,3 +27,4 @@ eshell/
 network-security.data
 *.dat
 *.swp
+/.cache/
