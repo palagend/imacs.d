@@ -261,8 +261,8 @@
 (global-set-key (kbd "M-s f") 'find-name-dired)
 
 ;; Project-related keybindings
-(global-set-key (kbd "C-c p f") 'projectile-find-file)
-(global-set-key (kbd "M-\\") 'treemacs)
+(global-set-key (kbd "C-c pf") 'projectile-find-file)
+(global-set-key (kbd "C-c pp") 'treemacs)
 
 ;; View occurrence in occur mode
 (define-key occur-mode-map (kbd "v") 'occur-mode-display-occurrence)
