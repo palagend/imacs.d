@@ -14,9 +14,9 @@
     ad-do-it))
 
 ;; Whitespace-style
-(setq whitespace-style '(trailing lines space-before-tab
-                                  indentation space-after-tab)
-      whitespace-line-column 100)
+;; (setq whitespace-style '(trailing lines space-before-tab
+                                  ;; indentation space-after-tab)
+      ;; whitespace-line-column 100)
 
 ;; Add Urban Dictionary to webjump (C-x g)
 (eval-after-load "webjump"

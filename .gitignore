@@ -29,3 +29,4 @@ network-security.data
 *.swp
 /.cache/
 /projectile-bookmarks.eld
+/tutorial
