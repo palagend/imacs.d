@@ -4,6 +4,7 @@
 ;; Add melpa and melpa-china to package repos
 ;(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
 ;(add-to-list 'package-archives '("melpa-stable" . "http://stable.melpa.org/packages/") t)
+(setq package-archives '())
 (add-to-list 'package-archives '("melpa-china" . "http://elpa.emacs-china.org/melpa/") t)
 (add-to-list 'package-archives '("melpa-stable-china" . "http://elpa.emacs-china.org/melpa-stable/") t)
 (add-to-list 'package-archives '("gnu-china" ."http://elpa.emacs-china.org/gnu/") t)
