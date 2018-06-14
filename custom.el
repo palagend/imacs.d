@@ -8,7 +8,7 @@
  '(custom-enabled-themes (quote (misterioso)))
  '(package-selected-packages
    (quote
-    (treemacs-projectile tagedit string-edit smartparens simplezen restclient paredit move-text markdown-mode magit js2-refactor helm-projectile guide-key flycheck-pos-tip dockerfile-mode company beginend))))
+    (undo-tree yaml-mode treemacs-projectile tagedit string-edit smartparens simplezen restclient paredit move-text markdown-mode magit js2-refactor helm-projectile guide-key flycheck-pos-tip dockerfile-mode company beginend))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

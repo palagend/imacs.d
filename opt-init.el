@@ -2,6 +2,7 @@
 (defun init--install-packages ()
   (packages-install
    '(
+     undo-tree
      treemacs-projectile
      helm-projectile
      company
@@ -45,6 +46,7 @@
 (require 'setup-html-mode)
 (require 'setup-paredit)
 (beginend-global-mode)
+(undo-tree-mode)
 
 ;; Default setup of smartparens
 (require 'smartparens-config)
